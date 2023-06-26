@@ -1,0 +1,61 @@
+@import "utilidades/fuentes";
+@import "utilidades/cajas";
+@import "utilidades/paleta";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $color-uno;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        font-family: $fuente-crimson ;
+        color: $color-cuatro;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        background-color: $color-uno;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    padding: 15px;
+    text-align: center;
+
+    h2 {
+        color: $color-tres;
+        background-color: $color-cuatro;
+        font-family: $fuente-roboto;
+        text-align: center;
+    }
+
+    .CajaArma {
+        @include CajaArmas {300px,300px,0px, 0px,
+        }
+
+        background-color: $color-cinco;
+
+        h3 {
+            color: $color-cuatro;
+            font-family: $fuente-ibm;
+        }
+        .usd{
+            color: $color-seis;
+        }
+    }
+    
+
+
+}
