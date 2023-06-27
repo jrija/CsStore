@@ -1,0 +1,6 @@
+@mixin CajaArmas($width, $height,$padding){
+    width: $width;
+    height: $height;
+    padding: $padding;
+ background-color:  rgba(0, 0, 0, 0.569);
+}

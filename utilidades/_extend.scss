@@ -1,0 +1,79 @@
+%CajaArmas{
+    .CajaArma1, .CajaArma2, .CajaArma3, .CajaArma4, .CajaArma5, .CajaArma6, .CajaArma7, .CajaArma8, .CajaArma9,
+    .CajaArma10, .CajaArma11, .CajaArma12{
+        margin-left: 80px;
+    }
+    
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+   "posiciontitulo posiciontitulo posiciontitulo posiciontitulo"
+   "posicion1 posicion2 posicion3 posicion4"
+   "posiciontitulo2 posiciontitulo2 posiciontitulo2 posiciontitulo2"
+   "posicion5 posicion6 posicion7 posicion8"
+   "posiciontitulo3 posiciontitulo3 posiciontitulo3 posiciontitulo3"
+   "posicion9 posicion10 posicion11 posicion12";
+}
+%PosicionCajaArmas{
+    .BordeArma{
+        width: 300px;
+        height: 300px;
+        background-color: rgba(116, 127, 132, 0.55);
+        border: solid rgba(172, 255, 47, 0.684) ;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow:2px 2px 10px rgba(255, 179, 47, 0.684) ;
+           transition: transform 0.3s;
+           }
+        }
+        
+    }
+   .CajaArma1{
+    grid-area: posicion1;
+   
+   }
+   .CajaArma2{
+    grid-area: posicion2;
+   }
+   .CajaArma3{
+    grid-area: posicion3;
+   }
+   .CajaArma4{
+    grid-area: posicion4;
+   }
+   .CajaArma5{
+    grid-area: posicion5;
+   }
+   .CajaArma6{
+    grid-area: posicion6;
+   }
+   .CajaArma7{
+    grid-area: posicion7;
+   }
+   .CajaArma8{
+    grid-area: posicion8;
+   }
+   .CajaArma9{
+    grid-area: posicion9;
+   }
+   .CajaArma10{
+    grid-area: posicion10;
+   }
+   .CajaArma11{
+    grid-area: posicion11;
+   }
+   .CajaArma12{
+    grid-area: posicion12;
+   }
+   .TituloArma{
+    grid-area: posiciontitulo;
+   }
+   .TituloArma2{
+    grid-area: posiciontitulo2;
+   }
+   .TituloArma3{
+    grid-area: posiciontitulo3;
+   }
